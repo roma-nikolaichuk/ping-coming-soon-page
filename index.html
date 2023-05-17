@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Roman Nikolaichuk">
+    <meta
+      name="description"
+      content="Ping single column coming soon page for FrontendMentor.io. Get a sneak peek of what's coming soon! Our Coming Soon page is designed to provide you with a seamless user experience. Our responsive design ensures that you can view the page in the optimal layout, no matter what device you're using. All interactive elements are easy to navigate, and you'll receive clear feedback with hover states. You can sign up for updates by submitting your email address via our input field. Rest assured that your data is safe with us - we have error handling in place to ensure that your email address is formatted correctly, and the input field is not left empty."
+    >
+    <meta
+      name="keywords"
+      content="Frontend Mentor, Frontend, Mentor, Ping single column coming soon page, Ping single column coming soon page Solution, Responsive design, Optimal layout, Interactive elements, Hover states, Email address, Input field, Error handling, Roman Nikolaichuk, FrontendMentor.io, Roman Nikolaichuk Frontend"
+    >
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    >
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous"
+    >
+    <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
+    <script src="./assets/js/notify-form.js" defer></script>
+    <script src="./assets/js/footer.js" defer></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- Start of the header -->
+      <header class="header">
+        <div class="header__logo">
+          <a
+            href="/"
+            class="header__logo-link animate__animated animate__zoomIn"
+          >
+            <img
+              class="header__logo-img"
+              src="./assets/images/logo.svg"
+              alt="Ping Logo"
+              title="Ping Logo"
+            >
+          </a>
+        </div>
+      </header>
+      <!-- End of the header -->
+
+      <!-- Start of the main -->
+      <main class="main">
+        <h1 class="sr-only">Ping single column coming soon page</h1>
+
+        <h1 class="title animate__animated animate__zoomIn">
+          We are launching <span>soon!</span>
+        </h1>
+        <p class="subtitle animate__animated animate__zoomIn">
+          Subscribe and get notified
+        </p>
+
+        <div id="notification" class="notification">
+          <i class="fa fa-check-circle"></i>
+          <p id="notification__text" class="notification__text"></p>
+        </div>
+
+        <form
+          class="notify-form animate__animated animate__zoomIn animate__delay-1s"
+          id="notify-form"
+        >
+          <div class="notify-form__field">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="notify-form__input"
+              placeholder="Your email address..."
+              required
+            >
+
+            <label for="email" class="" id="notify-form__label"></label>
+
+            <button
+              type="submit"
+              class="notify-form__submit"
+              id="notify-form__submit"
+            >
+              Notify Me
+            </button>
+          </div>
+        </form>
+
+        <figure class="illustration animate__animated animate__zoomIn">
+          <img
+            src="./assets/images/illustration-dashboard.png"
+            alt="Dashboard Illustration"
+          >
+        </figure>
+      </main>
+      <!-- End of the main -->
+
+      <!-- Start of the footer -->
+      <footer class="footer">
+        <nav class="social-nav">
+          <ul class="social-nav__list">
+            <li
+              class="social-nav__item animate__animated animate__fadeInBottomLeft"
+              title="Open in new tab"
+            >
+              <a
+                href="https://www.facebook.com/"
+                class="social-nav__link"
+                rel="noopener"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li
+              class="social-nav__item animate__animated animate__fadeInUp"
+              title="Open in new tab"
+            >
+              <a
+                href="https://twitter.com/"
+                class="social-nav__link"
+                rel="noopener"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+
+            <li
+              class="social-nav__item animate__animated animate__fadeInBottomRight"
+              title="Open in new tab"
+            >
+              <a
+                href="https://www.instagram.com/"
+                class="social-nav__link"
+                rel="noopener"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <p class="footer__copyright animate__animated animate__zoomIn">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+      <!-- End of the footer -->
+
+      <!-- Start of the footer-attr -->
+      <div class="footer-attr">
+        <button
+          class="footer-attr__button js-toggle-tip animate__animated animate__fadeInBottomRight"
+          type="button"
+          aria-label="Attribution"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="attribution"
+        >
+          <img
+            class="footer-attr__image"
+            src="https://avatars.githubusercontent.com/u/107611767?s=400&u=af2347175f31d710bee7ec634f994ae53d460731&v=4"
+            alt=""
+            width="50"
+            height="50"
+          >
+        </button>
+
+        <div
+          id="attribution"
+          role="tooltip"
+          class="footer-attr__attribution footer-attr__dialog js-tooltip"
+        >
+          <p class="footer-attr__text">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da"
+              target="_blank"
+              rel="noreferrer noopener"
+              title="Open in new tab"
+              class="footer-attr__link"
+              >Frontend Mentor</a
+            >. Coded by
+            <a
+              href="https://github.com/roma-nikolaichuk/ping-coming-soon-page"
+              target="_blank"
+              rel="noreferrer noopener"
+              title="Open in new tab"
+              class="footer-attr__link"
+              >Roman Nikolaichuk</a
+            >.
+          </p>
+        </div>
+      </div>
+      <!-- End of the footer-attr -->
+    </div>
+  </body>
+</html>

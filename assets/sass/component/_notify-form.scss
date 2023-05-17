@@ -1,0 +1,91 @@
+.notify-form {
+  margin-inline: 2.25rem;
+
+  @include media-breakpoint-up(2xl) {
+    margin-inline: 0;
+  }
+
+  &__label {
+    &--invalid {
+      text-align: center;
+      margin: 0.75rem 0 1.75rem;
+      letter-spacing: 0.25px;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 400;
+      color: $theme-light-red-color;
+
+      @include media-breakpoint-up(2xl) {
+        padding-left: 2rem;
+        font-size: 0.75rem;
+        margin: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  &__field {
+    display: grid;
+
+    @include media-breakpoint-up(2xl) {
+      grid-template-columns: 1fr 200px;
+      gap: 0.5rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.5rem 4rem;
+    border: 2px solid $theme-pale-blue-color;
+    color: $theme-very-dark-blue-color;
+    font-size: 1.5rem;
+    font-weight: 300;
+    border-radius: 50px;
+
+    @include media-breakpoint-up(2xl) {
+      grid-row: 1/2;
+
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-width: 1px;
+    }
+
+    &--invalid {
+      border-color: $theme-light-red-color;
+    }
+
+    &--valid {
+      border-color: $theme-blue-color;
+    }
+
+    &::placeholder {
+      color: $theme-pale-blue-color;
+    }
+  }
+
+  &__submit {
+    height: 5rem;
+    margin-top: 1.25rem;
+    background-color: $theme-blue-color;
+    box-shadow: 0px 10px 15px -3px $theme-pale-blue-color;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50px;
+
+    &:is(:hover, :focus) {
+      cursor: pointer;
+      opacity: 0.75;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    @include media-breakpoint-up(2xl) {
+      grid-row: 1/2;
+
+      height: 3.5rem;
+      font-size: 1rem;
+      margin-top: 0;
+    }
+  }
+}

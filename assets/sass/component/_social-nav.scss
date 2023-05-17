@@ -1,0 +1,47 @@
+.social-nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    @include media-breakpoint-up(2xl) {
+      gap: 0.75rem;
+    }
+  }
+
+  &__item {
+    display: grid;
+    place-items: center;
+    border: 0.125rem solid $theme-pale-blue-color;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    transition: background-color 0.5s ease-in-out, border-width 0.5s ease-in-out;
+
+    &:is(:hover, :focus) {
+      cursor: pointer;
+      border-color: $theme-blue-color;
+      background-color: $theme-blue-color;
+
+      .social-nav__link {
+        color: white;
+      }
+    }
+
+    @include media-breakpoint-up(2xl) {
+      width: 1.75rem;
+      height: 1.75rem;
+      border-width: 0.0625rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.75rem;
+    color: $theme-blue-color;
+    transition: color 0.5s ease-in-out;
+
+    @include media-breakpoint-up(2xl) {
+      font-size: 1rem;
+    }
+  }
+}

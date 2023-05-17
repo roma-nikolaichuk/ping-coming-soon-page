@@ -1,0 +1,22 @@
+.header {
+  margin-bottom: 5.25rem;
+  text-align: center;
+
+  @include media-breakpoint-up(2xl) {
+    margin-bottom: 3rem;
+  }
+
+  &__logo {
+    &-link {
+      display: inline-block;
+    }
+
+    &-img {
+      width: 6.5rem;
+
+      @include media-breakpoint-up(2xl) {
+        width: 100%;
+      }
+    }
+  }
+}

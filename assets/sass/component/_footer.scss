@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 14.75rem;
+
+  @include media-breakpoint-up(2xl) {
+    margin-top: 4rem;
+  }
+
+  &__copyright {
+    margin-top: 3.5rem;
+    text-align: center;
+    font-weight: 300;
+    color: $theme-gray-color;
+
+    @include media-breakpoint-up(2xl) {
+      margin-top: 1.75rem;
+      font-size: 0.75rem;
+    }
+  }
+}
